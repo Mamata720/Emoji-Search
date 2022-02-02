@@ -1,6 +1,28 @@
 .App {
   text-align: center;
+
 }
+h1{
+  color:black
+}
+
+
+
+
+.main_div{
+  background-color: burlywood;
+  position: relative;
+  position: relative;
+  color:black;
+border: 2px solid black;
+  
+}
+
+
+ 
+
+
+
 
 .App-logo {
   height: 40vmin;
