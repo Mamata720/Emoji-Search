@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./App.css";
 import { Component } from "react";
@@ -6,19 +5,13 @@ import Information from './emojiList.json';
 import './App.css';
 
 
-
-
-
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      search: null,
-
+      search: null
     };
-    
-    
   }
   searchSpace = (event) => {
     let keyword =event.target.value;
@@ -27,15 +20,14 @@ class App extends Component {
   render() {
     
     const styleInfo = {
-      paddingRight: '50px'
+      paddingRight: '50px',
+      fontSize:'20px',
+      
     }
     const elementStyle = {
-      border: '5px solid black',
-      borderRadius: '10px',
-      position: 'relative',
-      left: '2vh',
+      border: '2px solid black',
       height: '4vh',
-      width: '100vh',
+      width: '180vh',
       marginBottom: '2vh'
     }
 
@@ -46,6 +38,7 @@ class App extends Component {
     const items = Information.filter((data) => {
       if (this.state.search == null)
         return data
+      
         if (data.keywords.includes(this.state.search)) {
           return data;
         }
@@ -81,6 +74,22 @@ class App extends Component {
   }
 }
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
