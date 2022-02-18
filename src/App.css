@@ -3,27 +3,14 @@
 
 }
 h1{
-  color:black
+  color:black;
 }
-
-
-
-
 .main_div{
-  background-color: burlywood;
-  position: relative;
   position: relative;
   color:black;
-border: 2px solid black;
+border: 1px solid black;
   
 }
-
-
- 
-
-
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
