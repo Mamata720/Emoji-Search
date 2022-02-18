@@ -46,6 +46,9 @@ class App extends Component {
     const items = Information.filter((data) => {
       if (this.state.search == null)
         return data
+        if (data.keywords.includes(this.state.search)) {
+          return data;
+        }
       else if (data.title.toLowerCase().includes(this.state.search.toLowerCase()) || data.symbol.toLowerCase().includes(this.state.search.toLowerCase())) {
         return data 
       }
